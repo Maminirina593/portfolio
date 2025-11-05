@@ -146,9 +146,45 @@
     min-height: 120px;
 }
 
+/* Bouton avec état de chargement */
 .btn-submit {
     width: 100%;
     margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-text {
+    display: block;
+}
+
+.btn-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Message de confirmation/erreur */
+.form-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.form-message.success {
+    background-color: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+
+.form-message.error {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
 }
 
 /* Responsive */

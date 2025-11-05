@@ -23,10 +23,59 @@
     animation: slideInLeft 1s ease forwards;
 }
 
+/* Container pour la salutation dynamique */
+.greeting-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#dynamic-greeting {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Animation de typing */
+.typing-animation {
+    border-right: 3px solid var(--primary-color);
+    animation: blink 1s infinite;
+    padding-right: 5px;
+}
+
+/* Animation de changement de texte */
+.text-changing {
+    animation: textChange 0.5s ease-in-out;
+}
+
+@keyframes textChange {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: var(--primary-color); }
+}
+
 .accueil-content h1 {
     font-size: 3.5rem;
-    margin-bottom: 20px;
     line-height: 1.2;
+    display: inline;
+    margin: 0;
 }
 
 .accueil-content h1 span {
@@ -206,7 +255,46 @@
     background-color: var(--primary-color);
 }
 
+/* Animations d'entrée */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
 /* Responsive */
+@media (max-width: 1200px) {
+    .accueil-content h1,
+    #dynamic-greeting {
+        font-size: 3rem;
+    }
+}
+
 @media (max-width: 992px) {
     .accueil-container {
         flex-direction: column;
@@ -216,6 +304,10 @@
     .accueil-content {
         padding-right: 0;
         margin-bottom: 50px;
+    }
+    
+    .greeting-container {
+        justify-content: center;
     }
     
     .accueil-content p {
@@ -237,6 +329,11 @@
         height: 40px;
         font-size: 16px;
     }
+    
+    .accueil-content h1,
+    #dynamic-greeting {
+        font-size: 2.8rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -244,8 +341,9 @@
         padding-top: 120px;
     }
     
-    .accueil-content h1 {
-        font-size: 2.5rem;
+    .accueil-content h1,
+    #dynamic-greeting {
+        font-size: 2.2rem;
     }
     
     .accueil-content h2 {
@@ -262,11 +360,22 @@
         width: 100%;
         max-width: 250px;
     }
+    
+    .greeting-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #dynamic-greeting {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 576px) {
-    .accueil-content h1 {
-        font-size: 2rem;
+    .accueil-content h1,
+    #dynamic-greeting {
+        font-size: 1.8rem;
     }
     
     .accueil-content h2 {
@@ -282,5 +391,16 @@
         width: 35px;
         height: 35px;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .accueil-content h1,
+    #dynamic-greeting {
+        font-size: 1.6rem;
+    }
+    
+    .greeting-container {
+        flex-direction: column;
     }
 }
