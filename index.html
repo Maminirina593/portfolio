@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio MJN - Développeur Full Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/apropos.css">
+    <link rel="stylesheet" href="css/competences.css">
+    <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- ===== HEADER AMÉLIORÉ ===== -->
+<header id="header">
+    <div class="container header-container">
+        <div class="logo">M<span>J</span>N</div>
+        
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#accueil" data-lang="accueil" class="nav-link">
+                    <span class="nav-text">Accueil</span>
+                    <span class="nav-hover"></span>
+                </a></li>
+                <li><a href="#a-propos" data-lang="a-propos" class="nav-link">
+                    <span class="nav-text">À propos</span>
+                    <span class="nav-hover"></span>
+                </a></li>
+                <li><a href="#competences" data-lang="competences" class="nav-link">
+                    <span class="nav-text">Compétences</span>
+                    <span class="nav-hover"></span>
+                </a></li>
+                <li><a href="#projets" data-lang="projets" class="nav-link">
+                    <span class="nav-text">Projets</span>
+                    <span class="nav-hover"></span>
+                </a></li>
+                <li><a href="#contact" data-lang="contact" class="nav-link">
+                    <span class="nav-text">Contact</span>
+                    <span class="nav-hover"></span>
+                </a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-right">
+            <div class="language-selector">
+                <select id="language-select">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <span class="theme-dot"></span>
+            </button>
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Menu mobile amélioré -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">M<span>J</span>N</div>
+                <button class="mobile-close" id="mobile-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-list">
+                <li><a href="#accueil" data-lang="accueil" class="mobile-nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Accueil</span>
+                </a></li>
+                <li><a href="#a-propos" data-lang="a-propos" class="mobile-nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>À propos</span>
+                </a></li>
+                <li><a href="#competences" data-lang="competences" class="mobile-nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Compétences</span>
+                </a></li>
+                <li><a href="#projets" data-lang="projets" class="mobile-nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projets</span>
+                </a></li>
+                <li><a href="#contact" data-lang="contact" class="mobile-nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+    <!-- ===== SECTION ACCUEIL ===== -->
+    <section id="accueil">
+        <div class="container accueil-container">
+            <div class="accueil-content">
+                <h1 data-lang="accueil-titre">Bonjour, je suis <span>Maminirina Jean Noël</span></h1>
+                <h2 data-lang="accueil-sous-titre">Développeur Web Full Stack</h2>
+                <p data-lang="accueil-description">Passionné par la création d'applications web modernes et performantes. Je combine créativité et expertise technique pour offrir des solutions innovantes adaptées à vos besoins.</p>
+                <div class="accueil-buttons">
+                    <a href="#projets" class="btn" data-lang="accueil-btn-projets">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary" data-lang="accueil-btn-contact">Me contacter</a>
+                </div>
+            </div>
+            <div class="accueil-image">
+                <div class="profile-container">
+                    <img src="images/profile.png" alt="Photo de profil " class="profile-img">
+                    <div class="profile-overlay"></div>
+                    <div class="floating-elements">
+                        <div class="floating-element element-1"><i class="fab fa-html5"></i></div>
+                        <div class="floating-element element-2"><i class="fab fa-css3-alt"></i></div>
+                        <div class="floating-element element-3"><i class="fab fa-js"></i></div>
+                        <div class="floating-element element-4"><i class="fab fa-react"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION À PROPOS ===== -->
+    <section id="a-propos">
+        <div class="container">
+            <h2 class="section-title" data-lang="a-propos-titre">À propos de moi</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <img src="images/profile.png" alt="À propos de MJN">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3 data-lang="a-propos-sous-titre">Développeur Web Passionné</h3>
+                    <p data-lang="a-propos-description">Je suis un développeur web full stack avec plus de 5 ans d'expérience dans la création d'applications web modernes et performantes. Mon expertise couvre à la fois le développement front-end et back-end.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-text" data-lang="a-propos-projets">Projets réalisés</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-text" data-lang="a-propos-annees">Années d'expérience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="30">0</span>
+                            <span class="stat-text" data-lang="a-propos-clients">Clients satisfaits</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h4 data-lang="a-propos-etudes">Études</h4>
+                            <p data-lang="a-propos-etudes-details">Master en Informatique - Université de Technologie (2015-2020)</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4 data-lang="a-propos-certifications">Certifications</h4>
+                            <p data-lang="a-propos-certifications-details">Certification AWS Developer, Google Cloud Professional, React Developer Certification</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4 data-lang="a-propos-qualites">Qualités</h4>
+                            <p data-lang="a-propos-qualites-details">Créatif, rigoureux, autonome, bon communicateur et passionné par les nouvelles technologies</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn" data-lang="a-propos-btn-cv">Télécharger mon CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION COMPÉTENCES ===== -->
+    <section id="competences">
+        <div class="container">
+            <h2 class="section-title" data-lang="competences-titre">Mes Compétences</h2>
+            
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="langages" data-lang="competences-langages">Langages</button>
+                <button class="tab-btn" data-tab="frontend" data-lang="competences-frontend">Front-end</button>
+                <button class="tab-btn" data-tab="backend" data-lang="competences-backend">Back-end</button>
+                <button class="tab-btn" data-tab="bdd" data-lang="competences-bdd">Bases de données</button>
+                <button class="tab-btn" data-tab="design" data-lang="competences-design">Design</button>
+                <button class="tab-btn" data-tab="outils" data-lang="competences-outils">Outils</button>
+            </div>
+            
+            <div class="skills-container">
+                <!-- Langages de programmation -->
+                <div class="skills-tab-content active" id="langages-tab">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <p>Python</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <p>PHP</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <p>CSS3</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Frameworks Front-end -->
+                <div class="skills-tab-content" id="frontend-tab">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <p>React</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-vuejs"></i>
+                            </div>
+                            <p>Vue.js</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-angular"></i>
+                            </div>
+                            <p>Angular</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-sass"></i>
+                            </div>
+                            <p>Sass</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <p>Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Frameworks Back-end -->
+                <div class="skills-tab-content" id="backend-tab">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <p>Node.js</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <p>Express</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-laravel"></i>
+                            </div>
+                            <p>Laravel</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <p>Django</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bases de données -->
+                <div class="skills-tab-content" id="bdd-tab">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <p>MySQL</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <p>MongoDB</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <p>SQLite</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Logiciels de création graphique -->
+                <div class="skills-tab-content" id="design-tab">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <p>Figma</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <p>Adobe XD</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <p>Photoshop</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-vector-square"></i>
+                            </div>
+                            <p>Illustrator</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Outils de versioning -->
+                <div class="skills-tab-content" id="outils-tab">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <p>Git</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <p>GitHub</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <p>Docker</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i classfab fa-npm"></i>
+                            </div>
+                            <p>NPM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION PROJETS AMÉLIORÉE ===== -->
+<section id="projets">
+    <div class="container">
+        <h2 class="section-title" data-lang="projets-titre">Mes Projets</h2>
+        
+        <div class="projects-carousel">
+            <!-- Navigation par flèches -->
+            <button class="carousel-nav carousel-prev" aria-label="Projets précédents">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-nav carousel-next" aria-label="Projets suivants">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Conteneur du carrousel -->
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Projet 1 -->
+                    <div class="project-card" data-project="1">
+                        <div class="project-image">
+                            <img src="images/gstock.png" alt="Gestion de Stock">
+                            <div class="project-badge">Full Stack</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://demo-gstock.com" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Vidéo Démo</span>
+                                    </a>
+                                    <a href="https://github.com/votrecompte/gstock" class="project-link source-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code Source</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Système de Gestion de Stock</h3>
+                            <p>Application complète de gestion d'inventaire avec suivi en temps réel, alertes de stock faible et rapports analytiques.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Express</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 2 -->
+                    <div class="project-card" data-project="2">
+                        <div class="project-image">
+                            <img src="images/ecommerce.png" alt="Plateforme E-commerce">
+                            <div class="project-badge">E-commerce</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://demo-ecommerce.com" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Vidéo Démo</span>
+                                    </a>
+                                    <a href="https://github.com/votrecompte/ecommerce" class="project-link source-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code Source</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Plateforme E-commerce</h3>
+                            <p>Marketplace moderne avec système de paiement sécurisé, gestion des commandes et interface administrateur complète.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 3 -->
+                    <div class="project-card" data-project="3">
+                        <div class="project-image">
+                            <img src="images/social-app.png" alt="Réseau Social">
+                            <div class="project-badge">Social</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://demo-social.com" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Vidéo Démo</span>
+                                    </a>
+                                    <a href="https://github.com/votrecompte/social-app" class="project-link source-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code Source</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Réseau Social Éducatif</h3>
+                            <p>Plateforme sociale dédiée à l'éducation avec chat en temps réel, partage de ressources et classes virtuelles.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 4 -->
+                    <div class="project-card" data-project="4">
+                        <div class="project-image">
+                            <img src="images/weather-app.png" alt="Application Météo">
+                            <div class="project-badge">Mobile</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://demo-weather.com" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Vidéo Démo</span>
+                                    </a>
+                                    <a href="https://github.com/votrecompte/weather-app" class="project-link source-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code Source</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Application Météo Intelligente</h3>
+                            <p>App météo avec prévisions précises, alertes personnalisées et interface adaptative pour mobile et desktop.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">API REST</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 5 -->
+                    <div class="project-card" data-project="5">
+                        <div class="project-image">
+                            <img src="images/task-manager.png" alt="Gestionnaire de Tâches">
+                            <div class="project-badge">Productivity</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://demo-tasks.com" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Vidéo Démo</span>
+                                    </a>
+                                    <a href="https://github.com/votrecompte/task-manager" class="project-link source-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code Source</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Gestionnaire de Tâches Avancé</h3>
+                            <p>Outil de productivité avec diagrammes de Gantt, collaboration d'équipe et intégration calendrier.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">NestJS</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">D3.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 6 -->
+                    <div class="project-card" data-project="6">
+                        <div class="project-image">
+                            <img src="images/portfolio.png" alt="Portfolio Artistique">
+                            <div class="project-badge">Design</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://demo-portfolio.com" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Vidéo Démo</span>
+                                    </a>
+                                    <a href="https://github.com/votrecompte/portfolio" class="project-link source-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code Source</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Artistique Interactif</h3>
+                            <p>Site portfolio avec animations 3D, galerie interactive et système de blog intégré.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Three.js</span>
+                                <span class="tech-tag">GSAP</span>
+                                <span class="tech-tag">WordPress API</span>
+                                <span class="tech-tag">Sass</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 7 -->
+                    <div class="project-card" data-project="7">
+                        <div class="project-image">
+                            <img src="images/fitness-app.png" alt="Application Fitness">
+                            <div class="project-badge">Health</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://demo-fitness.com" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Vidéo Démo</span>
+                                    </a>
+                                    <a href="https://github.com/votrecompte/fitness-app" class="project-link source-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code Source</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Application Fitness & Nutrition</h3>
+                            <p>App complète de suivi fitness avec planificateur de repas, suivi de progrès et communauté.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 8 -->
+                    <div class="project-card" data-project="8">
+                        <div class="project-image">
+                            <img src="images/chat-app.png" alt="Application de Chat">
+                            <div class="project-badge">Real-time</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://demo-chat.com" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Vidéo Démo</span>
+                                    </a>
+                                    <a href="https://github.com/votrecompte/chat-app" class="project-link source-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code Source</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Application de Messagerie</h3>
+                            <p>Chat en temps réel avec salons multiples, partage de fichiers et appels vidéo intégrés.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">WebRTC</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 9 -->
+                    <div class="project-card" data-project="9">
+                        <div class="project-image">
+                            <img src="images/analytics.png" alt="Tableau de Bord Analytics">
+                            <div class="project-badge">Analytics</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://demo-analytics.com" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Vidéo Démo</span>
+                                    </a>
+                                    <a href="https://github.com/votrecompte/analytics" class="project-link source-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code Source</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Tableau de Bord Analytics</h3>
+                            <p>Solution de business intelligence avec visualisation de données en temps réel et rapports automatisés.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 10 -->
+                    <div class="project-card" data-project="10">
+                        <div class="project-image">
+                            <img src="images/learning-platform.png" alt="Plateforme d'Apprentissage">
+                            <div class="project-badge">Education</div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://demo-learning.com" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span>Vidéo Démo</span>
+                                    </a>
+                                    <a href="https://github.com/votrecompte/learning-platform" class="project-link source-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code Source</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Plateforme d'E-learning</h3>
+                            <p>Système complet de cours en ligne avec vidéos, quiz interactifs et suivi de progression.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Strapi</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">AWS S3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Indicateurs de pagination -->
+            <div class="carousel-indicators">
+                <button class="indicator active" data-slide="0"></button>
+                <button class="indicator" data-slide="1"></button>
+                <button class="indicator" data-slide="2"></button>
+                <button class="indicator" data-slide="3"></button>
+            </div>
+        </div>
+        
+        <div class="projects-cta">
+            <a href="#contact" class="btn btn-primary">
+                <span>Discutons de votre projet</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+    <!-- ===== SECTION CONTACT ===== -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title" data-lang="contact-titre">Contactez-moi</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 data-lang="contact-info-titre">Informations de contact</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label" data-lang="contact-telephone">Téléphone</span>
+                                <span class="contact-value">+261 34 74 956 07</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label" data-lang="contact-email">Email</span>
+                                <span class="contact-value">maminirinajeannoel@gmail.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label" data-lang="contact-adresse">Adresse</span>
+                                <span class="contact-value" data-lang="contact-adresse-details">FA II 179 D Isaingy, Antananarivo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 data-lang="contact-reseaux-titre">Réseaux sociaux</h3>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 data-lang="contact-form-titre">Envoyez-moi un message</h3>
+                    
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" data-lang="contact-form-nom">Nom</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-lang="contact-form-email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" data-lang="contact-form-sujet">Sujet</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-lang="contact-form-message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit" data-lang="contact-form-btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-info">
+                        <div class="footer-logo">MJN</div>
+                        <p data-lang="footer-description">Développeur web full stack passionné par la création d'applications modernes et performantes.</p>
+                        
+                        <div class="footer-social">
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4 data-lang="footer-liens-rapides">Liens rapides</h4>
+                        <ul>
+                            <li><a href="#accueil" data-lang="accueil">Accueil</a></li>
+                            <li><a href="#a-propos" data-lang="a-propos">À propos</a></li>
+                            <li><a href="#competences" data-lang="competences">Compétences</a></li>
+                            <li><a href="#projets" data-lang="projets">Projets</a></li>
+                            <li><a href="#contact" data-lang="contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-services">
+                        <h4 data-lang="footer-services">Services</h4>
+                        <ul>
+                            <li data-lang="footer-service1">Développement Web</li>
+                            <li data-lang="footer-service2">Applications Responsives</li>
+                            <li data-lang="footer-service3">E-commerce</li>
+                            <li data-lang="footer-service4">SEO & Performance</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h4 data-lang="footer-newsletter">Newsletter</h4>
+                        <p data-lang="footer-newsletter-desc">Recevez les dernières actualités et projets.</p>
+                        
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Votre email" data-lang="footer-newsletter-placeholder" required>
+                            <button type="submit" data-lang="footer-newsletter-btn">S'abonner</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="copyright" data-lang="footer-copyright">
+                        &copy; 2025 MJN. Tous droits réservés.
+                    </div>
+                    
+                    <div class="footer-legal">
+                        <a href="#" data-lang="footer-mentions">Mentions légales</a>
+                        <a href="#" data-lang="footer-confidentialite">Politique de confidentialité</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
